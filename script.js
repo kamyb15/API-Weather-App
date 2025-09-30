@@ -223,7 +223,11 @@ async function getFiveDayForecast(lat, lon) {
     fiveDay.innerHTML += `
       <div class="date-temp">
         <p id="datefive">${date}</p>
-        <p id="highlowfive"><span>${min}°</span> <span>${max}°</span></p>
+        <p id="highlowfive">
+          <span>${min}°</span> 
+          <span id="minmaxline"></span> 
+          <span>${max}°</span>
+        </p>
       </div>
       <hr id="hrhigh">`;
   });
