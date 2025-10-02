@@ -4,10 +4,206 @@
   box-sizing: border-box;
 }
 
-body {
+/* ----------------------------- Intro Page ------------------------------ */
+.intro-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  background: linear-gradient(to top, #73a9e3, #286097)
+}
+
+.main-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+/* ----- search bar ------ */
+#intro-search{
+
+}
+
+#intro-search-bar{
+  border-radius: 400px;
+  border: 1px solid black;
+  width: 350px;
+  height: 30px;
+  z-index: 9999;
+  padding: 10px;
+}
+
+#intro-submit{
+  display: none;
+}
+
+/* ----- Weather Icons ----- */
+
+/*#weather-scene-intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}*/
+
+#weather-scene-intro{
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+#cloud1-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 10px;
+  bottom: 520px;
+  display: none;
+}
+
+
+#cloud2-intro {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  bottom: 180px;
+  right: 300px;
+  display: block;
+}
+
+#cloud3-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 300px;
+  bottom: 500px;
+  display: block;
+}
+
+#cloud4-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 200px;
+  bottom: 100px;
+  display: block;
+}
+
+#cloud5-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 20px;
+  bottom: 300px;
+  display: block;
+}
+
+#cloud6-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 250px;
+  right: 100px;
+  display: block;
+}
+
+#cloud7-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 350px;
+  bottom: 550px;
+  display: block;
+}
+
+#cloud8-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 200px;
+  bottom: 150px;
+  display: block;
+}
+
+#cloud9-intro {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 300px;
+  bottom: 10px;
+  display: block;
+}
+
+#cloud10-intro {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 100px;
+  left: 700px;
+  display: block;
+}
+
+
+#sun-intro {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right: 120px;
+  top: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+#moon-intro {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 120px;
+  top: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#sun-cloud-intro {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 120px;
+  top: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#star1-intro, #star2-intro, #star3-intro, #star4-intro {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+
+/* ----------------------------- Index Page ------------------------------ */
+
+.index-body {
   min-height: 100vh;
   background-image: linear-gradient(to top, #73a9e3, #286097);
 }
+
+/* ----- Weather images ----- */
 
 #weather-scene {
   position: absolute;
@@ -19,15 +215,12 @@ body {
   z-index: 0;
   pointer-events: none;
 }
-
-
 #cloud1 {
   position: absolute;
   width: 200px;
   height: 200px;
   left: 10px;
   bottom: 520px;
-  animation: float 5s ease-in-out infinite;
   display:none;
 }
 
@@ -50,6 +243,7 @@ body {
   height: 600px;
   bottom: 180px;
   right: 190px;
+  animation: float 5s linear infinite;
   display: none;
 }
 
@@ -170,7 +364,10 @@ body {
   margin: 10px;
 }
 
-/* current */
+/* ----- Current Weather Module ----- */
+
+/* -- Current Search Bar -- */
+
 #current-search-wrapper {
   width: 70%;
   margin: 140px auto 50px auto;
@@ -193,8 +390,14 @@ body {
   width: 350px;
   height: 30px;
   z-index: 9999;
+  padding: 10px;
 }
 
+#submit {
+  display: none;
+}
+
+/* -- Current Wrapper -- */
 
 #current-wrapper {
   width: 70vh;
@@ -215,6 +418,8 @@ body {
 transform:  scale(1.02);
 }
 
+/* -- Current Emoji -- */
+
 #emoji-box {
   width: 200px;
   height: 200px;
@@ -230,14 +435,22 @@ transform:  scale(1.02);
   display: block;
 }
 
+/* -- Current Temperature -- */
 
-/* current temp */
-#current {
+#current-temp-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
 }
+
+#current-temp {
+  color: white;
+  font-size: 90px;
+  text-align: center;
+}
+
+/* -- Current Location -- */
 
 #current-location {
   color: white;
@@ -246,11 +459,8 @@ transform:  scale(1.02);
   margin-bottom: 10px;
 }
 
-#current-temp {
-  color: white;
-  font-size: 90px;
-  text-align: center;
-}
+
+/* -- Current Weather Description -- */
 
 #current-clear, #high-low {
   color: white;
@@ -262,15 +472,14 @@ transform:  scale(1.02);
   margin-bottom: 10px;
 }
 
-/*#temp {
-  /*border: 1px solid red;
-}*/
-
 #mini-current {
   margin-top: 13px;
   padding: 5px;
 }
 
+/* ----- Weather Modules ----- */
+
+/* -- Modules Wrapper -- */
 
 #module-wrapper {
   width: 90vh;
@@ -288,12 +497,13 @@ transform:  scale(1.02);
   
 }
 
+/* -- Page Footer -- */
 footer {
   height: 20vh;
 }
 
 
-/* 12-hour forecast */
+/* -- 12-hour Forecast -- */
 
 #forecast-desc {
   grid-area: forecast;
@@ -349,7 +559,7 @@ footer {
   font-weight: 600;
 }
 
-/*5-hour*/
+/* -- 5 Day Forecast -- */
 .date-temp { 
   font-size: 16px;
   display: flex;
