@@ -136,8 +136,8 @@ body {
   width: 350px;
   height: 350px;
   position: absolute;
-  left: 410px;
-  bottom: 380px;
+  right: 120px;
+  top: 20px;
   display: none;
 }
 
@@ -177,11 +177,6 @@ body {
 
 }
 
-#day-emoji {
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
-}
 #search {
   height: 50px;
   width: 400px;
@@ -209,6 +204,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 35px;
   transition: transform 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.08);
@@ -219,19 +215,35 @@ body {
 transform:  scale(1.02);
 }
 
+#emoji-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#day-emoji {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+
+/* current temp */
 #current {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   margin-top: 10px;
 }
 
 #current-location {
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #current-temp {
@@ -243,6 +255,11 @@ transform:  scale(1.02);
 #current-clear, #high-low {
   color: white;
   text-align: center;
+  font-size: 20px;
+}
+
+#current-clear {
+  margin-bottom: 10px;
 }
 
 /*#temp {
