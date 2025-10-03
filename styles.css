@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
   background: linear-gradient(to top, #73a9e3, #286097)
 }
 
@@ -81,7 +80,7 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  bottom: 180px;
+  bottom: 230px;
   right: 300px;
   display: block;
 }
@@ -189,10 +188,68 @@
   cursor: pointer;
 }
 
-#star1-intro, #star2-intro, #star3-intro, #star4-intro {
-  width: 50px;
-  height: 50px;
-  display: block;
+.star {
+width: 50px;
+height: 50px;
+position: absolute;
+}
+
+@keyframes twinkle {
+  0%, 100% {opacity: 1; }
+  50% {opacity: 0.3; }
+}
+
+#star1-intro {
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+#star1-2-intro {
+  top: 700px;
+  left: 1300px;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+#star2-intro {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  animation: twinkle 1.5s infinite ease-in-out;
+}
+
+#star2-2-intro {
+  position: absolute;
+  top: 500px;
+  left: 1400px;
+  animation: twinkle 2.5s infinite ease-in-out;
+}
+
+#star3-intro {
+  position: absolute;
+  top: 250px;
+  left: 800px;
+  animation: twinkle 2.2s infinite ease-in-out;
+}
+
+#star3-2-intro {
+  position: absolute;
+  top: 600px;
+  left: 900px;
+  animation: twinkle 3.3s infinite ease-in-out;
+}
+
+#star4-intro {
+  position: absolute;
+  top: 550px;
+  left: 100px;
+}
+
+#star4-2-intro {
+  position: absolute;
+  top: 50px;
+  left: 680px;
 }
 
 
