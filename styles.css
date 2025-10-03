@@ -30,22 +30,20 @@
   color: white;
 }
 
-/* ----- search bar ------ */
-#intro-search{
+/* ----- button ------ */
 
-}
-
-#intro-search-bar{
-  border-radius: 400px;
-  border: 1px solid black;
-  width: 350px;
-  height: 30px;
-  z-index: 9999;
+#intro-button{
+  box-sizing: border-box;
+  width: 20%;
+  height: auto;
   padding: 10px;
-}
-
-#intro-submit{
-  display: none;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* ----- Weather Icons ----- */
@@ -192,6 +190,7 @@
 width: 50px;
 height: 50px;
 position: absolute;
+display: none;
 }
 
 @keyframes twinkle {
