@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* ----------------------------- Intro Page ------------------------------ */
+body, html {
+  font-family: 'VT323', monospace;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+/* ----------------------------- Index Page ------------------------------ */
 .intro-body {
   min-height: 100vh;
   display: flex;
@@ -48,16 +57,6 @@
 
 /* ----- Weather Icons ----- */
 
-/*#weather-scene-intro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  z-index: 0;
-  pointer-events: none;
-}*/
 
 #weather-scene-intro{
   position: absolute;
@@ -252,9 +251,9 @@ display: none;
 }
 
 
-/* ----------------------------- Index Page ------------------------------ */
+/* ----------------------------- Weather Page ------------------------------ */
 
-.index-body {
+.weather-body {
   min-height: 100vh;
   background-image: linear-gradient(to top, #73a9e3, #286097);
 }
@@ -447,6 +446,7 @@ display: none;
   height: 30px;
   z-index: 9999;
   padding: 10px;
+  font-family: 'VT323', monospace;
 }
 
 #submit {
