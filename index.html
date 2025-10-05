@@ -1,151 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <link href="styles.css" rel="stylesheet">
     <title>Weather App</title>
-  </head>
-  <body class="index-body">
-    
-      <div id="weather-scene">
+    </head>
+<body class="intro-body">
+    <div id="weather-scene-intro">
         <img
-        id="cloud1"
+        id="cloud1-intro"
         src="Pixel/cloud1.PNG"
         alt="cloud1">
         <img
-        id="cloud2"
+        id="cloud2-intro"
         src="Pixel/cloud2.PNG"
         alt="cloud2">
         <img
-        id="cloud3"
+        id="cloud3-intro"
         src="Pixel/cloud3.PNG"
         alt="cloud3">
         <img
-        id="cloud4"
+        id="cloud4-intro"
         src="Pixel/cloud4.PNG"
         alt="cloud4">
         <img
-        id="cloud5"
+        id="cloud5-intro"
         src="Pixel/cloud5.PNG"
         alt="cloud5">
         <img
-        id="cloud6"
+        id="cloud6-intro"
         src="Pixel/cloud6.PNG"
         alt="cloud6">
         <img
-        id="cloud7"
+        id="cloud7-intro"
         src="Pixel/cloud7.PNG"
         alt="cloud7">
         <img
-        id="cloud8"
+        id="cloud8-intro"
         src="Pixel/cloud8.PNG"
         alt="cloud8">
         <img
-        id="cloud9"
+        id="cloud9-intro"
         src="Pixel/cloud9.PNG"
         alt="cloud9">
         <img
-        id="cloud10"
+        id="cloud10-intro"
         src="Pixel/cloud10.PNG"
         alt="cloud10">
 
         <img
-        id="sun"
+        id="sun-intro"
         src="Pixel/sun.PNG"
-        alt="sun">
+        alt="sun"
+        onclick=""
+        >
         <img
-        id="sun-cloud"
+        id="sun-cloud-intro"
         src="Pixel/sun-cloud.PNG"
         alt="sun-cloud">
 
         <img
-        id="moon"
+        id="moon-intro"
         src="Pixel/moon.PNG"
         alt="moon">
 
         <img
-        id="star1"
+        class="star";
+        id="star1-intro"
         src="Pixel/star1.PNG"
         alt="star1">
+
         <img
-        id="star2"
+        class="star";
+        id="star1-2-intro"
+        src="Pixel/star1.PNG"
+        alt="star1-2">
+
+        <img
+        class="star";
+        id="star2-intro"
         src="Pixel/star2.PNG"
         alt="star2">
+
         <img
-        id="star3"
+        class="star";
+        id="star2-2-intro"
+        src="Pixel/star2.PNG"
+        alt="star2-2">
+
+        <img
+        class="star";
+        id="star3-intro"
         src="Pixel/star3.PNG"
         alt="star3">
+
         <img
-        id="star4"
+        class="star";
+        id="star3-2-intro"
+        src="Pixel/star3.PNG"
+        alt="star3-2">
+
+        <img
+        class="star";
+        id="star4-intro"
         src="Pixel/star4.PNG"
         alt="star4">
+
+        <img
+        class="star";
+        id="star4-2-intro"
+        src="Pixel/star4.PNG"
+        alt="star4-2">
+
     </div>
-    <div id="current-search-wrapper">
-    <div id="current-wrapper">
-    <div id="emoji-box">
-      <img
-      id="day-emoji"
-      src=""
-      alt="emoji of day" />
+
+    <div class="main-box">
+    <h1>Welcome to my Weather App!</h1>
+    <h2>Click the button below to begin</h2>
+        <a id="intro-button" href="weather.html">Search!</a>
     </div>
-    <div id="current-temp-wrapper">
-      <p id="current-temp" class="current"></p>
-    </div>
-    <div id="mini-current">
-       <p id="current-location" class="current"></p>
-      <p id="current-clear" class="current"></p>
-      <p id="high-low" class="current"></p>
-    </div>
-    </div>
-    <form id="search">
-        <input id="search-bar" type="text" placeholder="Search any US city..">
-        <button id="submit" type="submit"></button>
-      </form>
-      </div>
-    <div id="module-wrapper">
-      <div id="forecast-desc">
-      <p id="twelve">12-Hour</p>
-      <hr id="hr-12">
-      <div id="forecast" class="modules"></div>
-      </div>
-      <div id="five-day-wrapper">
-        <p id="fiveday">5-Day Forecast</p>
-        <hr id="hr-5">
-      <div id="five-day" class="modules"></div>
-      </div>
-      <div id="wind-wrapper">
-        <p id="wind-desc">Wind</p>
-        <hr id="hr-wind">
-      <div id="wind" class="modules"></div>
-      </div>
-      <div id="visibility-wrapper">
-        <p id="visibility-desc">Visibility</p>
-        <hr id="hr-visibility">
-      <div id="uv-index" class="modules"></div>
-      </div>
-      <div id="humidity-wrapper">
-        <p id="humidity-desc">Humidity</p>
-        <hr id="hr-humidity">
-      <div id="humidity" class="modules"></div>
-      </div>
-      <div id="feels-like-wrapper">
-        <p id="feels-like-desc">Sunrise / Sunset</p>
-        <hr id="hr-sunrise">
-      <div id="air-pollution" class="modules"></div>
-      </div>
-      <div id="sunrise-sunset-wrapper">
-        <p id="sunrise-sunset-desc">Feels Like</p>
-        <hr id="hr-feels-like">
-      <div id="sunrise-sunset" class="modules"></div>
-      </div>
-    </div>
-  <script src="script.js"></script>
-  </body>
-  <footer>
-    <p id="area"></p>
-  </footer>
+    <script>
+
+        const sun = document.getElementById("sun-intro");
+        const moon = document.getElementById("moon-intro");
+        const cloud1 = document.getElementById("cloud1-intro");
+        const cloud2 = document.getElementById("cloud2-intro");
+        const cloud3 = document.getElementById("cloud3-intro");
+        const cloud4 = document.getElementById("cloud4-intro");
+        const cloud5 = document.getElementById("cloud5-intro");
+        const cloud6 = document.getElementById("cloud6-intro");
+        const cloud7 = document.getElementById("cloud7-intro");
+        const cloud8 = document.getElementById("cloud8-intro");
+        const cloud9 = document.getElementById("cloud9-intro");
+        const cloud10 = document.getElementById("cloud10-intro");
+        const body = document.body;
+        const star1 = document.getElementById("star1-intro");
+        const star2 = document.getElementById("star2-intro");
+        const star3 = document.getElementById("star3-intro");
+        const star4 = document.getElementById("star4-intro");
+        const star1_2 = document.getElementById("star1-2-intro");
+        const star2_2 = document.getElementById("star2-2-intro");
+        const star3_3 = document.getElementById("star3-2-intro");
+        const star4_4 = document.getElementById("star4-2-intro");
+
+        sun.onclick = function() {
+            sun.style.display = "none";
+            moon.style.display = "block";
+            cloud2.style.display = "none";
+            cloud3.style.display = "none";
+            cloud4.style.display = "none";
+            cloud5.style.display = "none";
+            cloud7.style.display = "block";
+            cloud8.style.display = "none";
+            cloud9.style.display = "none";
+            cloud10.style.display = "none";
+            star1.style.display = "block";
+            star2.style.display = "block";
+            star3.style.display = "block";
+            star4.style.display = "block";
+            star1_2.style.display = "block";
+            star2_2.style.display = "block";
+            star3_3.style.display = "block";
+            star4_4.style.display = "block";
+            document.body.style.backgroundImage = "linear-gradient(to top, #304360, #06061b)";
+        }
+
+        moon.onclick = function() {
+            moon.style.display = "none";
+            sun.style.display = "block";
+            cloud2.style.display = "block";
+            cloud3.style.display = "block";
+            cloud4.style.display = "block";
+            cloud5.style.display = "block";
+            cloud7.style.display = "block";
+            cloud8.style.display = "block";
+            cloud9.style.display = "block";
+            cloud10.style.display = "block";
+            star1.style.display = "none";
+            star2.style.display = "none";
+            star3.style.display = "none";
+            star4.style.display = "none";
+            star1_2.style.display = "none";
+            star2_2.style.display = "none";
+            star3_3.style.display = "none";
+            star4_4.style.display = "none";
+            body.style.backgroundImage = "linear-gradient(to top, #73a9e3, #286097)";
+        }
+
+    </script>
+</body>
 </html>
-
-
-
-
-
