@@ -1,4 +1,4 @@
-## ⛅️ API Weather Application
+## ⛅️ API Weather Dashboard 
 An interactive web-based weather platform that lets users check real-time weather conditions for any US city.
 
 ## 🧭 OverView
