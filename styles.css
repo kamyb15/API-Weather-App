@@ -53,6 +53,12 @@ body, html {
   backdrop-filter: blur(15px);
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#intro-button:hover {
+  background-color: white;
+  color: #286097;
 }
 
 /* ----- Weather Icons ----- */
@@ -538,7 +544,7 @@ transform:  scale(1.02);
 /* -- Modules Wrapper -- */
 
 #module-wrapper {
-  width: 90vh;
+  max-width: 90vh;
   height: 65vh;
   margin: 10px auto;
   display: grid;
@@ -578,7 +584,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 13px;
-  width: 97%;
+  max-width: 97%;
   margin-left: 10px;
   margin-top: 9px;
   flex-wrap: wrap;
@@ -607,6 +613,7 @@ footer {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   height: 75%;
+  max-width: auto;
 }
 
 #time {
